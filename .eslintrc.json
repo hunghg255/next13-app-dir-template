@@ -1,4 +1,8 @@
 {
+  "env": {
+    "es2020": true,
+    "browser": true
+  },
   "parser": "@typescript-eslint/parser",
   "extends": [
     "next/core-web-vitals",
