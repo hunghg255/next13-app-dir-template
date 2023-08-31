@@ -34,7 +34,7 @@
     "husky": "^8.0.3",
     "sass": "^1.66.1",
     "typescript": "5.0.4",
-    "verify-commit-msg": "^0.0.7"
+    "verify-commit-msg": "^0.0.9"
   },
   "git-hooks": {
     "pre-commit": "npm run lint",
