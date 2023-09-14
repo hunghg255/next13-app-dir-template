@@ -20,7 +20,7 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@hunghg255/eslint-config-react": "^0.0.16",
+    "@hunghg255/eslint-config-react": "^0.0.18",
     "@next/bundle-analyzer": "^13.4.19",
     "@total-typescript/ts-reset": "^0.4.2",
     "@types/node": "20.1.2",
@@ -28,13 +28,13 @@
     "@types/react-dom": "18.2.4",
     "bumpp": "^9.2.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.47.0",
+    "eslint": "^8.49.0",
     "eslint-config-next": "13.4.1",
     "git-scm-hooks": "^0.0.6",
     "husky": "^8.0.3",
-    "sass": "^1.66.1",
+    "sass": "^1.67.0",
     "typescript": "5.0.4",
-    "verify-commit-msg": "^0.0.10"
+    "verify-commit-msg": "^0.0.11"
   },
   "git-hooks": {
     "pre-commit": "npm run lint",
