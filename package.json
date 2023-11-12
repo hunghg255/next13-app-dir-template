@@ -15,12 +15,13 @@
     "release": "bumpp -r"
   },
   "dependencies": {
-    "next": "^14.0.0",
+    "autoprefixer": "^10.4.16",
+    "next": "^14.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@hunghg255/eslint-config-react": "^0.0.18",
+    "@hunghg255/eslint-config-react": "^0.0.24",
     "@next/bundle-analyzer": "^13.5.6",
     "@total-typescript/ts-reset": "^0.4.2",
     "@types/node": "20.1.2",
@@ -28,7 +29,7 @@
     "@types/react-dom": "18.2.4",
     "bumpp": "^9.2.0",
     "cross-env": "^7.0.3",
-    "eslint": "^8.52.0",
+    "eslint": "^8.53.0",
     "eslint-config-next": "^13.5.6",
     "git-scm-hooks": "^0.0.7",
     "husky": "^8.0.3",
