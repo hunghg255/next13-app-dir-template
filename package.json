@@ -3,22 +3,27 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "env-cmd -f .env.clientDev next dev",
     "build": "next build",
-    "start": "next start",
+    "buildDev": "npm run prebuild && cp -f .env.clientDev .env && next build",
+    "buildProd": "cp -f .env.clientProd .env && next build",
+    "start": "env-cmd -f .env.clientProd next start",
     "lint": "next lint",
     "analyze": "cross-env ANALYZE=true next build",
     "analyze:server": "cross-env BUNDLE_ANALYZE=server next build",
     "analyze:browser": "cross-env BUNDLE_ANALYZE=browser next build",
     "verify-commit": "verify-commit-msg",
-    "postinstall": "git-scm-hooks",
-    "release": "bumpp -r"
+    "prepare": "git-scm-hooks",
+    "release": "bumpp -r",
+    "gen-icon": "csvgtocss",
+    "standalone": "node server.js"
   },
   "dependencies": {
     "autoprefixer": "^10.4.16",
-    "next": "^14.0.2",
+    "next": "^14.0.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "sharp": "^0.33.1"
   },
   "devDependencies": {
     "@hunghg255/eslint-config-react": "^0.0.26",
@@ -27,15 +32,17 @@
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
-    "bumpp": "^9.2.0",
+    "bumpp": "^9.2.1",
     "cross-env": "^7.0.3",
-    "eslint": "^8.53.0",
+    "csvgtocss": "^0.0.8",
+    "env-cmd": "^10.1.0",
+    "eslint": "^8.56.0",
     "eslint-config-next": "^13.5.6",
-    "git-scm-hooks": "^0.0.7",
+    "git-scm-hooks": "^0.0.11",
     "husky": "^8.0.3",
     "sass": "^1.69.5",
     "typescript": "5.0.4",
-    "verify-commit-msg": "^0.0.11"
+    "verify-commit-msg": "^0.0.14"
   },
   "git-hooks": {
     "pre-commit": "npm run lint",
