@@ -1,14 +1,11 @@
 import Image from 'next/image';
 
-import Hello from '@components/Hello';
-
 import styles from './page.module.scss';
 
 export default function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>
-        <Hello />
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
