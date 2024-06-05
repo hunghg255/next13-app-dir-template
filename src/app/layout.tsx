@@ -1,9 +1,14 @@
 import '../../styles/globals.scss';
 
+import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
 
 const inter = Inter({ subsets: ['latin'] });
+
+const MainLayout = dynamic(() => import('src/Layout/MainLayout/MainLayout'), {
+  ssr: false,
+});
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang='en'>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MainLayout>{children} </MainLayout>
+      </body>
 
       <Toaster position='top-center' />
     </html>
