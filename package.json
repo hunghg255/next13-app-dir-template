@@ -20,14 +20,14 @@
     "gen-color": "esno ./scripts/genColorCss.ts"
   },
   "dependencies": {
-    "autoprefixer": "^10.4.19",
+    "autoprefixer": "^10.4.20",
     "classnames": "^2.5.1",
-    "next": "^14.2.3",
-    "next-intl": "^3.14.1",
+    "next": "^14.2.6",
+    "next-intl": "^3.17.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "sharp": "^0.33.4",
-    "sonner": "^1.4.41"
+    "sharp": "^0.33.5",
+    "sonner": "^1.5.0"
   },
   "devDependencies": {
     "@hunghg255/eslint-config-react": "^0.0.26",
@@ -36,18 +36,18 @@
     "@types/node": "20.1.2",
     "@types/react": "18.2.6",
     "@types/react-dom": "18.2.4",
-    "bumpp": "^9.4.1",
+    "bumpp": "^9.5.2",
     "cross-env": "^7.0.3",
-    "csvgtocss": "^0.0.8",
+    "csvgtocss": "^0.1.0",
     "env-cmd": "^10.1.0",
     "eslint": "^8.57.0",
     "eslint-config-next": "^13.5.6",
     "esno": "^4.7.0",
-    "git-scm-hooks": "^0.0.11",
+    "git-scm-hooks": "^0.2.0",
     "husky": "^8.0.3",
-    "sass": "^1.77.4",
+    "sass": "^1.77.8",
     "typescript": "5.0.4",
-    "verify-commit-msg": "^0.0.14"
+    "verify-commit-msg": "^0.1.0"
   },
   "git-hooks": {
     "pre-commit": "npm run lint",
