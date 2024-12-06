@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import classNames from 'classnames';
 import { toast as t } from 'sonner';
 
